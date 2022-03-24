@@ -1,8 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.scss";
 
 const Home = () => {
-  return <div>home</div>;
+  return (
+    <section className="home">
+      <article className="home__container">
+        <div className="home__money">Money</div>
+        <div className="home__water">Water</div>
+        <div className="home__water">Time</div>
+        <Link to="/options" className="home__options">
+          Options
+        </Link>
+      </article>
+    </section>
+  );
 };
 
 export default Home;
