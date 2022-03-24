@@ -1,0 +1,22 @@
+.options {
+  padding: 10px;
+
+  &__container {
+    border: 1px solid lime;
+  }
+
+  &__timer {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    color: black;
+  }
+
+  &__manual {
+    @extend .options__timer;
+    margin-top: 20px;
+  }
+}

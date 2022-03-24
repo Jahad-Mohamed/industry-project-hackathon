@@ -1,6 +1,8 @@
 .home {
+  padding: 10px;
+
   &__container {
-    border: 1px solid hotpink;
+    // border: 1px solid hotpink;
     display: flex;
     flex-direction: column;
   }
@@ -30,10 +32,5 @@
     color: white;
     height: 40px;
     border-radius: 10px;
-
-    &:visited,
-    &:link {
-      text-decoration: none;
-    }
   }
 }
