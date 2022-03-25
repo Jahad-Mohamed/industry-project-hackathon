@@ -29,12 +29,12 @@ const TimerResults = () => {
         </div>
 
         <div className="results__comment">
-          Awesome! You're on fire in saving water
+          Awesome! You're on fire in saving water.
         </div>
         <div className="results__saving-container">
           <div className="results__saving">
             <img src={pounds} alt="pounds" className="icon__pounds" />
-            <div className="results__saving-figures"> .20 £ </div>
+            <div className="results__saving-figures"> 0.20 £ </div>
           </div>
           <div className="results__saving">
             <img src={droplet} alt="droplet" />
@@ -47,10 +47,11 @@ const TimerResults = () => {
             <h3 className="results__info-title">Did you know?</h3>
             <p className="results__info-text">
               Reducing your shower time by 2 minutes will save you £25 a year
-              and 5000 litres of water
+              and 5000 litres of water.
             </p>
           </div>
         </div>
+
         <div className="results__bottom-space"></div>
       </div>
     </>
