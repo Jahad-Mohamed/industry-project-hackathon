@@ -2,6 +2,10 @@ import React from "react";
 import "./enter-manual.scss";
 
 const EnterManual = () => {
+  const handleClick = (e) => {
+    console.log("Click happened");
+    e.preventDefault();
+  };
   return (
     <div className="enter-manual__container">
       <div className="enter-manual__hero">
@@ -16,10 +20,18 @@ const EnterManual = () => {
             How long did you shower today?
           </div>
           <div className="enter-manual__option">
-            <div className="enter-manual__option-choice"> 5 mins</div>
-            <div className="enter-manual__option-choice"> 10 mins</div>
-            <div className="enter-manual__option-choice"> 15 mins</div>
-            <div className="enter-manual__option-choice"> 20 mins</div>
+            <div className="enter-manual__option-choice" onClick={handleClick}>
+              5 mins
+            </div>
+            <div className="enter-manual__option-choice" onClick={handleClick}>
+              10 mins
+            </div>
+            <div className="enter-manual__option-choice" onClick={handleClick}>
+              15 mins
+            </div>
+            <div className="enter-manual__option-choice" onClick={handleClick}>
+              20 mins
+            </div>
           </div>
           <div className="enter-manual__option-cta-container">
             <div className="enter-manual__option-cta"> CTA</div>
