@@ -4,11 +4,12 @@ import timer from "../../assets/icons/carbon_timer.svg";
 import pounds from "../../assets/icons/pounds.svg";
 import droplet from "../../assets/icons/droplet.svg";
 import bulb from "../../assets/icons/light-bulb.svg";
+import fire from "../../assets/icons/fire.svg";
 
 const TimerResults = () => {
   return (
     <div className="results__container">
-      <h1 className="results__title">Your shower time</h1>
+      <h1 className="results__title">Header</h1>
       <div className="results__timer-container-main">
         <div className="results__timer-container">
           <div className="results__timer">
@@ -16,7 +17,10 @@ const TimerResults = () => {
               <img src={timer} alt="timer" />
               <div className="results__time"> 5:02</div>
             </div>
-            <div className="results__timer-top">New Best!</div>
+            <div className="results__best">
+              <img src={fire} alt="fire" />
+              <div className="results__timer-top">New Best!</div>
+            </div>
           </div>
         </div>
       </div>
@@ -27,23 +31,24 @@ const TimerResults = () => {
       <div className="results__saving-container">
         <div className="results__saving">
           <img src={pounds} alt="pounds" />
-          <div> 20 </div>
+          <div className="results__saving-figures"> 20 £ </div>
         </div>
         <div className="results__saving">
-          <img src={droplet} alt="pounds" />
-          <div> 20L </div>
+          <img src={droplet} alt="droplet" />
+          <div className="results__saving-figures"> 20L </div>
         </div>
       </div>
       <div className="results__info-container">
-        <img src={bulb} alt="pounds" />
-        <div>
-          <h3>Did you know</h3>
-          <p>
+        <img src={bulb} alt="light-bulb" />
+        <div className="results__info">
+          <h3 className="results__info-title">Did you know?</h3>
+          <p className="results__info-text">
             Reducing your shower time by 2 minutes will save you £25 a year and
             5000 litres of water
           </p>
         </div>
       </div>
+      <div className="results__bottom-space"></div>
     </div>
   );
 };
