@@ -32,7 +32,7 @@ function App() {
         <Route
           exact
           path="/results"
-          render={(routerProps) => <ManualResults {...routerProps} />}
+          render={(routerProps) => <TimerResults {...routerProps} />}
         />
       </Switch>
     </>
