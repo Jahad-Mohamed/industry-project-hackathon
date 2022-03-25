@@ -7,6 +7,10 @@ import carbontimer from "../../assets/icons/carbon_timer.svg";
 import raindrop from "../../assets/icons/carbon_rain-drop.svg";
 import poundsign from "../../assets/icons/frame-20.svg";
 import { Link } from "react-router-dom";
+import pause from "../../assets/icons/ant-design_pause-outlined.svg";
+import play from "../../assets/icons/ci_play-arrow-1.svg";
+import stop from "../../assets/icons/ci_play-arrow.svg";
+import refresh from "../../assets/icons/codicon_debug-restart.svg";
 
 const StartTimer = () => {
   const [time, setTime] = React.useState(0);
@@ -47,11 +51,10 @@ const StartTimer = () => {
           </div>
         </div>
         <div className="timer__buttons">
-          <div className="button__bottom-finish">
-            <img src={play} alt="playbutton" />
-            <div className="finish">Finish</div>
+          <div className="button-bottom__finish">
+            <img src={stop} alt="playbutton" />
+            <div className="finish">Start</div>
           </div>
-          <div c></div>
         </div>
       </div>
     </>

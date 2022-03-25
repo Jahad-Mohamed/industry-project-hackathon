@@ -85,3 +85,44 @@ button:active {
 button:focus {
   outline: 0;
 }
+
+.button-bottom {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+  }
+  &__play {
+    border: 1px solid #084566;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 25px;
+    margin: 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  &__finish {
+    background: #084566;
+    border: 1px solid#084566;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finish {
+  color: white;
+  margin-right: 0.5rem;
+}
