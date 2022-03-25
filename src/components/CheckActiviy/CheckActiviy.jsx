@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./check-activiy.scss";
 import clock from "../../assets/icons/whiteClock.svg";
-import edit from "../../assets/icons/edit-icon.svg";
+import backArrow from "../../assets/icons/backArrow.svg";
 import blueEdit from "../../assets/icons/blueEdit.svg";
 import arrow from "../../assets/icons/whiteArrow2.svg";
 import blueArrow from "../../assets/icons/blueArrow.svg";
@@ -15,6 +15,9 @@ const CheckActiviy = () => {
       <Header title="Track Shower" />
       <section className="options">
         <section className="options__container">
+          <Link to="/">
+            <img className="options__backarrow" src={backArrow} alt="" />
+          </Link>
           <div className="options__image-container">
             <img className="options__image" src={shower} alt="" />
           </div>
