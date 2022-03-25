@@ -17,8 +17,8 @@
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
+    height: 13rem;
+    width: 13rem;
     padding: 2rem;
     margin: 1rem;
     background: rgba(233, 247, 255, 0.7);
@@ -36,6 +36,7 @@
   }
   &__best {
     display: flex;
+    margin-top: 0.2rem;
   }
   &__time {
     font-size: 32px;
@@ -45,6 +46,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
+    font-weight: 800;
+    margin: 1rem 0rem;
   }
   &__saving-container {
     display: flex;
@@ -60,10 +63,10 @@
     border-radius: 50%;
     height: 6rem;
     width: 6rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   &__saving-figures {
-    font-size: 24px;
+    font-size: 18px;
   }
   &__info-container {
     display: flex;
@@ -84,6 +87,15 @@
     font-size: 14px;
   }
   &__bottom-space {
-    height: 2rem;
+    height: 5rem;
+  }
+}
+
+.icon {
+  &__timer {
+    padding-bottom: 0.5rem;
+  }
+  &__pounds {
+    margin-right: 0.5rem;
   }
 }
