@@ -3,10 +3,12 @@ import "./App.scss";
 import Home from "./components/HomePage/Home";
 import CheckActiviy from "./components/CheckActiviy/CheckActiviy";
 import EnterManual from "./components/EnterManual/EnterManual";
-import StartTimer from "./components/StartTimer/StartTimer";
-import ManualResults from "./components/ManualResults/ManualResults";
+// import StartTimer from "./components/StartTimer/StartTimer";
+import StartTimer2 from "./components/StartTimer2/StartTimer2";
+// import ManualResults from "./components/ManualResults/ManualResults";
 // import TimerResults from "./components/TimerResults/TimerResults";
 import TimerResults from "./components/TimerResults/TimerResults";
+import EndTimer from "./components/EndTimer/EndTimer";
 
 function App() {
   return (
@@ -28,7 +30,11 @@ function App() {
         />
         <Route
           path="/options/timer"
-          render={(routerProps) => <StartTimer {...routerProps} />}
+          render={(routerProps) => <StartTimer2 {...routerProps} />}
+        />
+        <Route
+          path="/options/end-timer"
+          render={(routerProps) => <EndTimer {...routerProps} />}
         />
         <Route
           exact

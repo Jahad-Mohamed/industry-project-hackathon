@@ -1,7 +1,6 @@
 import React from "react";
 import "./start-timer.scss";
 import Header from "../Header/Header";
-
 import pound from "../../assets/icons/pounds.svg";
 import carbontimer from "../../assets/icons/carbon_timer.svg";
 import raindrop from "../../assets/icons/carbon_rain-drop.svg";
@@ -32,7 +31,7 @@ const StartTimer = () => {
 
   return (
     <>
-      <div className="body">
+      <div className="">
         <Header title="Shower Timer" />
         <div className="shower-timer__wrapper">
           <div className="timers">
