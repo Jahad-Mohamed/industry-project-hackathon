@@ -2,6 +2,12 @@ import React from "react";
 import "./start-timer.scss";
 import Header from "../Header/Header";
 
+import pound from "../../assets/icons/pounds.svg";
+import carbontimer from "../../assets/icons/carbon_timer.svg";
+import raindrop from "../../assets/icons/carbon_rain-drop.svg";
+import poundsign from "../../assets/icons/frame-20.svg";
+import { Link } from "react-router-dom";
+
 const StartTimer = () => {
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimerOn] = React.useState(false);
@@ -22,32 +28,30 @@ const StartTimer = () => {
 
   return (
     <>
-      <Header title="Shower Timer" />
-      <div className="timers">
-        <div id="display">
-          {/* <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span> */}
-          <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-          <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+      <div className="body">
+        <Header title="Shower Timer" />
+        <div className="shower-timer__wrapper">
+          <div className="timers">
+            <section className="timers__clock">
+              <img className="timer__icon" src={carbontimer} alt="timer icon" />
+              <h1 className="times__watch">00.00</h1>
+            </section>
+            <section className="timers__money">
+              <img className="pound__icon" src={poundsign} alt="pound icon" />
+              <h1 className="times__pound">0.00</h1>
+            </section>
+            <section className="timers__water">
+              <img className="drop__icon" src={raindrop} alt="drop icon" />
+              <h1 className="times__litres">0.0 L</h1>
+            </section>
+          </div>
         </div>
-
-        <div id="buttons">
-          {!timerOn && time === 0 && (
-            <button onClick={() => setTimerOn(true)}>Start</button>
-          )}
-          {timerOn && (
-            <>
-              <button onClick={() => setTime(0)}>Reset</button>
-              <button onClick={() => setTime(0)}>Finish</button>
-              <button onClick={() => setTimerOn(false)}>Pause</button>
-            </>
-          )}
-          {!timerOn && time > 0 && (
-            <>
-              <button onClick={() => setTime(0)}>Reset</button>
-              <button onClick={() => setTime(0)}>Finish</button>
-              <button onClick={() => setTimerOn(true)}>Play</button>
-            </>
-          )}
+        <div className="timer__buttons">
+          <div className="button__bottom-finish">
+            <img src={play} alt="playbutton" />
+            <div className="finish">Finish</div>
+          </div>
+          <div c></div>
         </div>
       </div>
     </>
