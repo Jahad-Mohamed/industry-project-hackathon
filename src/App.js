@@ -10,7 +10,6 @@ import TimerResults from "./components/TimerResults/TimerResults";
 function App() {
   return (
     <>
-      <TimerResults />
       <Switch>
         <Route
           exact
