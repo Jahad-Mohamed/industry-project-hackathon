@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <section className="home">
       <article className="home__container">
+        <h3 className="home__header">March</h3>
         <div className="home__money">Money</div>
         <div className="home__water">Water</div>
         <div className="home__water">Time</div>
