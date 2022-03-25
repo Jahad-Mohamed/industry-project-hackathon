@@ -2,7 +2,7 @@
   width: 100%;
   padding: 10px;
   background-color: #e5e5e5;
-  height: 500px;
+  height: 747px;
 
   &__container {
     // border: 1px solid hotpink;
@@ -14,21 +14,22 @@
   }
 
   &__header {
-    margin-bottom: 15px;
     background-color: white;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
+    padding: 10px 0;
     padding-right: 15px;
     border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   &__return {
     height: 10px;
     width: 20px;
-    // left: 50px;
     position: relative;
     right: 100px;
   }
@@ -37,10 +38,10 @@
     width: 100%;
     background-color: white;
     // border: 1px solid black;
-    height: 85px;
-    margin-bottom: 10px;
+    height: 130px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
   }
 
   &__money-title {
@@ -53,7 +54,7 @@
 
   &__money-container {
     // border: 1px solid hotpink;
-    padding: 5px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-around;
   }
@@ -64,6 +65,7 @@
     align-items: center;
     justify-content: center;
     // border: 1px solid orange;
+    padding: 5px 0;
     width: 100%;
   }
 
@@ -79,6 +81,7 @@
 
   &__subheader {
     font-weight: 700;
+    font-size: 18px;
   }
 
   &__water {
@@ -90,11 +93,11 @@
   }
 
   &__stats {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   &__label {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &__options {
@@ -102,12 +105,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 20px;
+    padding: 25px 20px;
+    margin-top: 105px;
     background-color: #084566;
     color: white;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 25px;
   }
 
   &__icon {
@@ -124,7 +127,7 @@
 
   &__see {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     padding-bottom: 15px;
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import "./home.scss";
@@ -7,9 +7,21 @@ import clock from "../../assets/icons/clock.svg";
 import droplet from "../../assets/icons/droplet.svg";
 import whiteArrow from "../../assets/icons/whiteArrow.svg";
 import returnArrow from "../../assets/icons/returnArrow.svg";
+import Modal from "../Modal/Modal";
+
+const delay = 3;
 
 const Home = () => {
-  return (
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    let timer1 = setTimeout(() => setShow(true), delay * 1000);
+    return () => {
+      clearTimeout(timer1);
+    };
+  }, []);
+
+  return show ? (
     <>
       <Header title="Overview" />
       <section className="home">
@@ -76,6 +88,8 @@ const Home = () => {
         </article>
       </section>
     </>
+  ) : (
+    <Modal />
   );
 };
 
