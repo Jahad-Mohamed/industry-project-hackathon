@@ -18,7 +18,7 @@ const TimerResults = () => {
             <div className="results__timer">
               <div className="results__timer-top">
                 <img src={timer} alt="timer" className="icon__timer" />
-                <div className="results__time"> 5:02</div>
+                <div className="results__time"> 5:27</div>
               </div>
               <div className="results__best">
                 <img src={fire} alt="fire" />
@@ -34,11 +34,11 @@ const TimerResults = () => {
         <div className="results__saving-container">
           <div className="results__saving">
             <img src={pounds} alt="pounds" className="icon__pounds" />
-            <div className="results__saving-figures"> 20 £ </div>
+            <div className="results__saving-figures"> .20 £ </div>
           </div>
           <div className="results__saving">
             <img src={droplet} alt="droplet" />
-            <div className="results__saving-figures"> 20L </div>
+            <div className="results__saving-figures"> 52L </div>
           </div>
         </div>
         <div className="results__info-container">
