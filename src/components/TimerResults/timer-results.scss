@@ -1,0 +1,12 @@
+.result {
+  &__container {
+    margin: 0rem;
+  }
+  &__title {
+    display: flex;
+    text-align: center;
+  }
+  &__timer-container {
+    padding: 2rem;
+  }
+}

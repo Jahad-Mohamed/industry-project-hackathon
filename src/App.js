@@ -5,10 +5,12 @@ import CheckActiviy from "./components/CheckActiviy/CheckActiviy";
 import EnterManual from "./components/EnterManual/EnterManual";
 import StartTimer from "./components/StartTimer/StartTimer";
 import ManualResults from "./components/ManualResults/ManualResults";
+import TimerResults from "./components/TimerResults/TimerResults";
 
 function App() {
   return (
     <>
+      <TimerResults />
       <Switch>
         <Route
           exact
